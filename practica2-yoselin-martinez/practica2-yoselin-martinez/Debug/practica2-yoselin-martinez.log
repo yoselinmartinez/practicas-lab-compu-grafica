@@ -1,4 +1,2 @@
 ﻿  main_prac02.cpp
-C:\Users\Lenovo\Documents\escuela\repositorios\practicas-laboratorio\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(87,4): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
-  practica2-yoselin-martinez.vcxproj -> C:\Users\Lenovo\Documents\escuela\repositorios\practicas-laboratorio\practica2-yoselin-martinez\Debug\practica2-yoselin-martinez.exe
+  practica2-yoselin-martinez.vcxproj -> C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\Debug\practica2-yoselin-martinez.exe
