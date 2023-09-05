@@ -1,2 +1,18 @@
 ﻿  main_prac02.cpp
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(84,48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(84,53): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(85,48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(85,53): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(86,48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(86,53): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(87,48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(87,53): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(89,47): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(89,52): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(90,47): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(90,52): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(91,47): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(91,52): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(92,47): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\practica2-yoselin-martinez\main_prac02.cpp(92,52): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   practica2-yoselin-martinez.vcxproj -> C:\Users\Lenovo\Documents\escuela\repositorios\practicas-lab-compu-grafica\practica2-yoselin-martinez\Debug\practica2-yoselin-martinez.exe
