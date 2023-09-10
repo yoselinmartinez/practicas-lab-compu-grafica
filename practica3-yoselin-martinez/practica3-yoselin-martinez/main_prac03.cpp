@@ -27,6 +27,7 @@ GLuint VBO[2], VAO[2], EBO[2]; //aqui va a crear los contenedores Vertex buffer 
 
 void myData(void);
 void getResolution(void);
+void crearCubo(Shader, glm::vec3, glm::vec3);
 
 //For Keyboard
 float movX = 0.0f,
@@ -34,6 +35,7 @@ movY = 0.0f,
 movZ = -11.0f;
 
 float rotY = 0.0f;
+glm::vec3 colorCafe = glm::vec3(0.4f, 0.2f, 0.0f);
 
 
 
@@ -295,7 +297,7 @@ int main()
 		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 1
+		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 11
 
 
 		glBindVertexArray(0);
@@ -345,4 +347,16 @@ void resize(GLFWwindow* window, int width, int height)
 {
 	// Set the Viewport to the size of the created window
 	glViewport(0, 0, width, height);
+}
+
+//Definimos una funcion que recibe 3 cosas -> 1 objeto de la clase Shader, 1 vector de 3 dimensiones
+//que guarda las cordenadas del cubo, un ultimo vector de 3 dimensiones para guardar el color
+
+void crearCubo(Shader myShader, glm::vec3 cordenadas, glm::vec3 color) {
+	glm::mat4 modelOp = glm::mat4(1.0f); //crea una nueva matriz default
+	modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f)); //traslada la matriz al origen
+	modelOp = glm::translate(modelOp, cordenadas); //trasladamos la matriz al valor guardado en 'cordenadas'
+	myShader.setMat4("model", modelOp); //dibuja los vertices de los cubos
+	myShader.setVec3("aColor", color); // asigna color a los vertices
+	glDrawArrays(GL_TRIANGLES, 0, 36); // dibuja los triangulos utilizando los vertices y sus colores
 }
