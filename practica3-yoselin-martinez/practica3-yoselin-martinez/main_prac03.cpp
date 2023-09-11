@@ -36,6 +36,9 @@ movZ = -11.0f;
 
 float rotY = 0.0f;
 glm::vec3 colorCafe = glm::vec3(0.4f, 0.2f, 0.0f);
+glm::vec3 colorBlanco = glm::vec3(1.0f, 1.0f, 1.0f);
+glm::vec3 colorNegro = glm::vec3(0.0f, 0.0f, 0.0f);
+
 
 
 
@@ -243,63 +246,32 @@ int main()
 
 		/*-------------------Second figure-------------------*/
 		glBindVertexArray(VAO[0]);	//Enable data array [0]
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));//para darle color a mi cubo, puede funcionar para todos
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 1
+		//modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));//aqui son las coordenadas respecto al origen
+		//myShader.setMat4("model", modelOp);// aqui lo dibuja utilizando la matriz de 4x4 
+		//myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));//para darle color a mi cubo, puede funcionar para todos
+		//glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 1
 
-		//modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(2.5f, 4.5f, 0.0f));//aqui son las coordenadas respecto al origen
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));// aqui trabaja respecto al cubo anterior(modelop)
-		myShader.setMat4("model", modelOp);// aqui lo dibuja utilizando la matriz de 4x4 
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 2 
+		crearCubo(myShader, glm::vec3(0.0f, 0.0f, 0.0f), colorCafe);//linea 1
+		crearCubo(myShader, glm::vec3(1.0f, 0.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, 0.0f, 0.0f), colorCafe);
 
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 3 
+		crearCubo(myShader, glm::vec3(1.0f, -1.0f, 0.0f), colorCafe);//linea 2
+		crearCubo(myShader, glm::vec3(2.0f, -1.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -1.0f, 0.0f), colorCafe);
 
-		modelOp = glm::translate(modelOp, glm::vec3(-1.0f, -1.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 4
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 5 
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 6 
-
-		modelOp = glm::translate(modelOp, glm::vec3(-3.0f, -1.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 7 
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 8
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 9
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 10
-
-		modelOp = glm::translate(modelOp, glm::vec3(1.0f, 0.0f, 0.0f));
-		myShader.setMat4("model", modelOp);
-		myShader.setVec3("aColor", glm::vec3(0.4f, 0.2f, 0.0f));
-		glDrawArrays(GL_TRIANGLES, 0, 36); //My Cube 11
+		crearCubo(myShader, glm::vec3(0.0f, -2.0f, 0.0f), colorCafe);//linea 3
+		crearCubo(myShader, glm::vec3(1.0f, -2.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, -2.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -2.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(4.0f, -2.0f, 0.0f), colorCafe);
 
 
+
+
+
+		
+		
+		
 		glBindVertexArray(0);
 		/*****************************************************************/
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
