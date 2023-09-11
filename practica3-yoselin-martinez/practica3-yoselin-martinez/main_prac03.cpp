@@ -32,15 +32,12 @@ void crearCubo(Shader, glm::vec3, glm::vec3);
 //For Keyboard
 float movX = 0.0f,
 movY = 0.0f,
-movZ = -11.0f;
+movZ = -40.0f;
 
 float rotY = 0.0f;
 glm::vec3 colorCafe = glm::vec3(0.4f, 0.2f, 0.0f);
 glm::vec3 colorBlanco = glm::vec3(1.0f, 1.0f, 1.0f);
 glm::vec3 colorNegro = glm::vec3(0.0f, 0.0f, 0.0f);
-
-
-
 
 void getResolution()
 {
@@ -219,7 +216,7 @@ int main()
 
 		// render
 		// Backgound color
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+		glClearColor(0.9f, 0.37f, 0.78f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		//Mi funci�n de dibujo
@@ -265,12 +262,114 @@ int main()
 		crearCubo(myShader, glm::vec3(3.0f, -2.0f, 0.0f), colorCafe);
 		crearCubo(myShader, glm::vec3(4.0f, -2.0f, 0.0f), colorCafe);
 
+		crearCubo(myShader, glm::vec3(0.0f, -3.0f, 0.0f), colorCafe);//linea 4
+		crearCubo(myShader, glm::vec3(1.0f, -3.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, -3.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -3.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(4.0f, -3.0f, 0.0f), colorCafe);
 
+		crearCubo(myShader, glm::vec3(-1.0f, -4.0f, 0.0f), colorCafe);//linea 5
+		crearCubo(myShader, glm::vec3(0.0f, -4.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(1.0f, -4.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, -4.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -4.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(4.0f, -4.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(5.0f, -4.0f, 0.0f), colorCafe);
 
+		crearCubo(myShader, glm::vec3(-2.0f, -5.0f, 0.0f), colorCafe);//linea 6
+		crearCubo(myShader, glm::vec3(-1.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(0.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(1.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -5.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(5.0f, -5.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(6.0f, -5.0f, 0.0f), colorCafe);
 
+		crearCubo(myShader, glm::vec3(-2.0f, -6.0f, 0.0f), colorCafe);//linea 7
+		crearCubo(myShader, glm::vec3(-1.0f, -6.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(0.0f, -6.0f, 0.0f), colorNegro);
+		crearCubo(myShader, glm::vec3(1.0f, -6.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -6.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -6.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -6.0f, 0.0f), colorNegro);
+		crearCubo(myShader, glm::vec3(5.0f, -6.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(6.0f, -6.0f, 0.0f), colorCafe);
 
-		
-		
+		crearCubo(myShader, glm::vec3(-2.0f, -7.0f, 0.0f), colorCafe);//linea 8
+		crearCubo(myShader, glm::vec3(-1.0f, -7.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(0.0f, -7.0f, 0.0f), colorNegro);
+		crearCubo(myShader, glm::vec3(1.0f, -7.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -7.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -7.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -7.0f, 0.0f), colorNegro);
+		crearCubo(myShader, glm::vec3(5.0f, -7.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(6.0f, -7.0f, 0.0f), colorCafe);
+
+		crearCubo(myShader, glm::vec3(-3.0f, -8.0f, 0.0f), colorCafe);//linea 9
+		crearCubo(myShader, glm::vec3(-2.0f, -8.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-1.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(0.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(1.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -8.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(5.0f, -8.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(6.0f, -8.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(7.0f, -8.0f, 0.0f), colorCafe);
+
+		crearCubo(myShader, glm::vec3(-3.0f, -9.0f, 0.0f), colorCafe);//linea 10
+		crearCubo(myShader, glm::vec3(-2.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-1.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(0.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(1.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(4.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(5.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(6.0f, -9.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(7.0f, -9.0f, 0.0f), colorCafe);
+
+		crearCubo(myShader, glm::vec3(-4.0f, -10.0f, 0.0f), colorCafe);//linea 11
+		crearCubo(myShader, glm::vec3(-3.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-2.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-1.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(0.0f, -10.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(1.0f, -10.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -10.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(3.0f, -10.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -10.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(5.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(6.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(7.0f, -10.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(8.0f, -10.0f, 0.0f), colorCafe);
+
+		crearCubo(myShader, glm::vec3(-4.0f, -11.0f, 0.0f), colorCafe);//linea 12
+		crearCubo(myShader, glm::vec3(-3.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-2.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-1.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(0.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(1.0f, -11.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(2.0f, -11.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(3.0f, -11.0f, 0.0f), colorBlanco);
+		crearCubo(myShader, glm::vec3(4.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(5.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(6.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(7.0f, -11.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(8.0f, -11.0f, 0.0f), colorCafe);
+
+		crearCubo(myShader, glm::vec3(-3.0f, -12.0f, 0.0f), colorCafe);//linea 13
+		crearCubo(myShader, glm::vec3(-2.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(-1.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(0.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(1.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(2.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(3.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(4.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(5.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(6.0f, -12.0f, 0.0f), colorCafe);
+		crearCubo(myShader, glm::vec3(7.0f, -12.0f, 0.0f), colorCafe);
+											 
 		
 		glBindVertexArray(0);
 		/*****************************************************************/
