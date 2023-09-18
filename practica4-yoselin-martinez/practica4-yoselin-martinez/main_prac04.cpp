@@ -298,67 +298,67 @@ int main()
 
 		//babyduck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(10.0f, 0.0f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(2.0f, 4.0f, 2.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(1.0f, 1.0f, 0.0f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //cabeza-pecho de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(2.0f, -1.0f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(12.0f, -1.0f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(2.0f, 2.0f, 2.0f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(1.0f, 1.0f, 0.0f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //cuerpo de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(2.5f, 0.1f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(12.5f, 0.1f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.3f, 0.2f, 2.0f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.94f, 0.85f, 0.16f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //colita alta de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(3.1f, -1.0f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(13.1f, -1.0f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.2f, 2.0f, 1.6f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.94f, 0.85f, 0.16f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //colita trasera de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(1.5f, -1.0f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(11.5f, -1.0f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(2.0f, 1.0f, 2.8f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.94f, 0.85f, 0.16f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //alita de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(-0.4f, 1.4f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(9.6f, 1.4f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.2f, 0.2f, 2.1f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.0f, 0.0f, 0.0f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //ojo de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(-1.3f, 0.4f, 0.0f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(8.7f, 0.4f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.6f, 0.4f, 1.6f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
-		glDrawArrays(GL_TRIANGLES, 0, 36); //ojo de baby duck
+		glDrawArrays(GL_TRIANGLES, 0, 36); //pico de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(1.015f, -2.5f, 0.5f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(11.015f, -2.5f, 0.5f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.3f, 1.0f, 0.2f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //piernita izquierda de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(1.015f, -2.5f, -0.5f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(11.015f, -2.5f, -0.5f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.3f, 1.0f, 0.2f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //piernita derecha de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(1.015f, -3.1f, 0.5f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(11.015f, -3.1f, 0.5f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.8f, 0.2f, 0.8f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //piecito izquierda de baby duck
 
-		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(1.015f, -3.1f, -0.5f));
+		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(11.015f, -3.1f, -0.5f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.8f, 0.2f, 0.8f));
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
