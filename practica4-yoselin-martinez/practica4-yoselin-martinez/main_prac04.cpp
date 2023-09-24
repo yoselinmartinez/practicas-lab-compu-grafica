@@ -27,15 +27,19 @@ GLuint VBO, VAO, EBO;
 
 void myData(void);
 void getResolution(void);
+void crearCubo(Shader, glm::vec3, glm::vec3);
+
 
 //For Keyboard
-float	movX = 0.0f,
+float	movX = -5.0f,
 movY = 0.0f,
-movZ = -15.0f; //para que aparezca mas alejada la figura
+movZ = -30.0f; //para que aparezca mas alejada la figura
 
 float   rotX = 0.0f,
 rotY = 0.0f,
 rotZ = 0.0f;
+
+glm::vec3 colorRojo = glm::vec3(1.0f, 0.0f, 0.0f);
 
 
 
@@ -194,21 +198,21 @@ int main()
 		myShader.setVec3("aColor", glm::vec3(1.0f, 0.0f, 0.0f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //pecho
 
-		////glm::mat4 tempCuello = glm::mat4(1.0f); //se recomienda hacer fuera del ciclo de dibujo
+		///glm::mat4 tempCuello = glm::mat4(1.0f); //se recomienda hacer fuera del ciclo de dibujo
 
-		////tempCuello = modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 2.75f, 0.0f));
-		////modelOp = glm::scale(modelOp, glm::vec3(0.5f, 0.5f, 1.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
-		////myShader.setMat4("model", modelOp);
+		///tempCuello = modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 2.75f, 0.0f));
+		///modelOp = glm::scale(modelOp, glm::vec3(0.5f, 0.5f, 1.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
+		///myShader.setMat4("model", modelOp);
 
-		////myShader.setVec3("aColor", glm::vec3(1.0f, 1.0f, 1.0f)); //indica el color
-		////glDrawArrays(GL_TRIANGLES, 0, 36); //cuello
+		///myShader.setVec3("aColor", glm::vec3(1.0f, 1.0f, 1.0f)); //indica el color
+		///glDrawArrays(GL_TRIANGLES, 0, 36); //cuello
 
-		////modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 4.25f, 0.0f));
-		////modelOp = glm::translate(tempCuello, glm::vec3(0.0f, 1.5f, 0.0f));
-		////modelOp = glm::scale(modelOp, glm::vec3(1.5f, 2.5f, 1.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
-		////myShader.setMat4("model", modelOp);
-		////myShader.setVec3("aColor", glm::vec3(0.0f, 0.0f, 1.0f)); //indica el color
-		////glDrawArrays(GL_TRIANGLES, 0, 36); //cabeza
+		///modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 4.25f, 0.0f));
+		///modelOp = glm::translate(tempCuello, glm::vec3(0.0f, 1.5f, 0.0f));
+		///modelOp = glm::scale(modelOp, glm::vec3(1.5f, 2.5f, 1.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
+		///myShader.setMat4("model", modelOp);
+		///myShader.setVec3("aColor", glm::vec3(0.0f, 0.0f, 1.0f)); //indica el color
+		///glDrawArrays(GL_TRIANGLES, 0, 36); //cabeza
 
 		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 2.75f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(0.5f, 0.5f, 1.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
@@ -294,9 +298,9 @@ int main()
 		myShader.setVec3("aColor", glm::vec3(0.84f, 0.84f, 0.84f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //filo de espada
 
-		///////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////
 
-		//babyduck
+		////babyduck
 
 		modelOp = glm::translate(glm::mat4(1.0f), glm::vec3(10.0f, 0.0f, 0.0f));
 		modelOp = glm::scale(modelOp, glm::vec3(2.0f, 4.0f, 2.0f));//0 elimina la variable, al final siempre para que no afecte a lo demas
@@ -363,6 +367,17 @@ int main()
 		myShader.setMat4("model", modelOp);
 		myShader.setVec3("aColor", glm::vec3(0.98f, 0.7f, 0.03f)); //indica el color
 		glDrawArrays(GL_TRIANGLES, 0, 36); //piecito derecha de baby duck
+
+
+
+////////////////////////////////////////E X T R A ////////////////////////////////////////
+
+
+		//crearCubo(myShader, glm::vec3(0.0f, 0.0f, 0.0f), colorRojo);//linea 1
+		//crearCubo(myShader, glm::vec3(1.0f, 0.0f, 0.0f), colorRojo);
+		//crearCubo(myShader, glm::vec3(2.0f, 0.0f, 0.0f), colorRojo);
+		//crearCubo(myShader, glm::vec3(3.0f, 0.0f, 0.0f), colorRojo);
+
 
 
 
